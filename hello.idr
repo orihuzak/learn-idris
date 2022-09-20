@@ -1,5 +1,9 @@
 module Main
 
 main : IO ()
-main = putStrLn "Hello idris2"
+main = do
+	putStr "Your name? "
+	name <- getLine
+	putStrLn ("Hi " ++ name ++ ". I'm Idris2.")
+
 
